@@ -9,7 +9,11 @@ var StarNameGenerator = (function() {
 	function generateName() {
 		var a = Math.floor(Math.random() * firstNames.length);
 		var b = Math.floor(Math.random() * lastNames.length);
-		return a + " " + b;
+		return firstNames[a] + " " + lastNames[b];
+	}
+
+	return {
+		generateName: generateName
 	}
 
 })();
